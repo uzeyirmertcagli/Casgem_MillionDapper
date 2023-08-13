@@ -1,0 +1,76 @@
+﻿@model List<Casgem_MillionDapper.DAL.Plates>
+@{
+    Layout = null;
+}
+
+
+
+<br />
+<br />
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sistemde En Çok Bulunan Plaka</h5>
+                    <p class="card-text">@ViewData["plateMax"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">En Az Olan Plaka</h5>
+                    <p class="card-text">@ViewData["plateMin"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-secondary text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">En Çok Tercih Edilen Vites</h5>
+                    <p class="card-text">@ViewData["shiftType"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">En Fazla Olan Araç Markası</h5>
+                    <p class="card-text">@ViewData["brandMax"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-danger text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">En Az Olan Araç Markası</h5>
+                    <p class="card-text">@ViewData["brandMin"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-info text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">En Fazla Tercih Edilen Yakıt Türü</h5>
+                    <p class="card-text">@ViewData["fuelType"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-secondary text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">En Fazla Tercih Edilen Renk</h5>
+                    <p class="card-text">@ViewData["colorType"]</p>
+                </div>
+            </div>
+        </div>
+        <a href="/ListBrand/Index" class="btn btn-outline-primary mt-4">Arama Sayfası</a>
+    </div>
+</div>
+
+
+

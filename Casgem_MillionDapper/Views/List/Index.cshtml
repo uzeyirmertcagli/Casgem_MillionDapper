@@ -1,0 +1,46 @@
+﻿@model List<Casgem_MillionDapper.DAL.Plates>
+@{
+    Layout = null;
+}
+
+<h3>Listleme</h3>
+@*
+
+
+<div class="input-group mb-6">
+    <form method="get" action="/List/Index/">
+        <input type="text" name="s" class="form-control" placeholder="Ara">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Ara</button>
+        </div>
+    </form>
+</div>
+
+<div id="searchResult">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Marka</th>
+                <th>Renk</th>
+                <th>Vites Türü</th>
+                <th>Yakıt Tipi</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <th>@i.BRAND</th>
+                    <th>@i.COLOR</th>
+                    <th>@i.SHIFTTYPE</th>
+                    <th>@i.FUEL</th>
+
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+</div>*@
